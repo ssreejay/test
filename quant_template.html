@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quantitative Methods for Evaluation (Prototype)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://gomelb.unimelb.edu.au/bbcswebdav/xid-2654_1" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/common_styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/jquery.mb.miniPlayer.js"></script>
+    <script src="js/utils/readmore.min.js"></script>
+    <script src="js/prototype.js"></script>
+    <script src="js/local.js"></script>    
+<script>
+        
+var userID;
+$$ = jQuery;           
+
+
+function setupLocalPage(){
+    
+$$('.tabs-container').each(function(){
+     $$(this).find('li').eq(0).addClass('active')
+     $$(this).find('.tab-pane').eq(0).addClass('active')
+  
+})
+    
+}
+
+</script>
+        
+           
+                 
+    
+    <style type="text/css">
+        
+        .panel-default{
+            
+        }
+        .tab-content{
+            margin-bottom: 20px;
+        }
+        .col-md-3{
+            border: 1px solid #ccc;
+            box-sizing:border-box
+        }
+        .readmore_btn {
+            padding-top: 10px;
+            text-decoration: none;
+        }
+        
+        .readmore_btn:hover,
+        .readmore_btn:focus {
+            text-decoration: none;
+        }
+        
+        .rightBlock{
+            display: none;
+            margin-bottom: 10px;
+            
+            
+        }
+        .rightBlock h3{
+            margin-top: 0px;
+        }
+        
+        .autoHeight{
+            height: auto !important;
+        }
+    </style>
+</head>
+
+<body onresize="">
+    <div class="pageContainer" id="pageContainer ">
+    <a href="javascript:void(0);" id="printBtnLink" title="Print"><i class="fa fa-print fa-2x"></i></a>
+    
+<!------------START CONTENT ---------------->
+<!------------- NEW PANEL 1------------->
+<div class="panel panel-default">
+            <div class="panel-body">
+                <h2><i class="fa fa-child fa-2x"></i> HEADING</h2>
+
+                <div class="row ">
+                    <div class="col col-md-12 panel-body">
+                    <p>CONTENT</p>
+
+
+                    </div>
+         
+                </div>
+
+            </div>
+        </div>
+
+
+<!------------- NEW PANEL 2------------->
+<div class="panel panel-default">
+    <div class="panel-body ">
+        <h2><i class="fa fa-compass fa-2x"></i> HEADING 2</h2>
+
+        <div class="row readmore">
+            <div class="col-md-12 panel-body ">
+            	     <p>This row has a readmore class</p>
+  
+                <div class="panel alone">
+                <h3><i class="fa fa-lightbulb-o"></i> SUB HEADING</h3>
+                <p>CONTENT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!------------- NEW PANEL 3------------->
+    
+<div class="panel panel-default">           
+
+    <div class="panel-body">
+        <h2><i class="fa fa-question fa-2x"></i> HEADING 3</h2>
+
+        <div class="row readmore">
+           
+           
+            <div class="col-md-9 panel-body">
+                <h3>LEFT PANEL CONTENT col-md-9</h3>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+
+                
+   
+            </div>
+            
+            <div class="col-md-3 rightBlock panel-body">
+               <h3>RIGHT PANEL CONTENT col-md-3</h3>
+                <p>This panel has class <strong>rightBlock</strong> for hide/show on readmore click.</p>
+
+            </div>
+            
+            
+        <div class="col-md-9 panel-body">
+            <h3>LEFT PANEL CONTENT col-md-9</h3>
+            <p>Content</p>
+        </div>
+        
+        
+        <div class="col-md-3 rightBlock panel-body">        
+            <h3>RIGHT PANEL CONTENT col-md-3</h3>
+            <p>This right panel is top aligned to previous left panel </p>        
+        </div>
+               
+               
+			<div class="col-md-12">
+				<h3>Content is full width col-md-12</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+            </div>
+         
+        </div>
+    </div>
+</div>
+
+
+<!------------- NEW PANEL 4------------->
+<div class="panel panel-default">           
+
+    <div class="panel-body">
+        <h2><i class="fa fa-search fa-2x"></i> TABS</h2>
+
+        <div class="row readmore">
+            <div class="col-md-9 panel-body">                
+                
+<!-- TABS -->                
+<div class="tabs-container">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation"><a><i class="fa fa-pencil"></i> TAB 1</a></li>
+        <li role="presentation"><a><i class="fa fa-pencil"></i> TAB 2</a></li>
+        <li role="presentation"><a><i class="fa fa-pencil"></i> TAB 3</a></li>
+    </ul>
+<!-- Tab panes -->
+    <div class="tab-content">
+        <!-------  TAB CONTENT   -------->
+        <div class="tab-pane">                        
+        	<p>CONTENT 1</p>
+        </div>
+        <div class="tab-pane">                        
+    	    <p>CONTENT 2</p>
+        </div>        
+        <div class="tab-pane">                        
+	        <p>CONTENT 3</p>
+        </div>        
+    </div>
+</div>         
+            
+            
+        </div>
+        
+           <div class="col-md-3 rightBlock panel-body">
+                <h3>RIGHT PANEL CONTENT col-md-3</h3>
+
+            </div>
+    </div>
+</div>
+        </div>
+
+
+
+
+
+
+
+
+<!------------- NEW PANEL 9------------->
+<div class="panel panel-default">           
+
+    <div class="panel-body">
+        <h2><i class="fa fa-list fa-2x"></i> Checklist</h2>
+
+        <div class="row">
+
+            <div class="col-md-9 panel-body">
+               
+               <div class="aCheckList">
+                
+<p><input type="checkbox"  id="chk1"><label for="chk1" class="chkLabel">Used excel and/or SPSS</label></p> 
+<p><input type="checkbox"  id="chk2"><label for="chk2" class="chkLabel">Carefully attend to the Ethics materials</label></p>
+<p><input type="checkbox"  id="chk3"><label for="chk3" class="chkLabel">Post on the Discussion Forum</label></p>
+<p><input type="checkbox"  id="chk4"><label for="chk4" class="chkLabel">Read Angrosino Chapter 5</label></p>
+                               
+            </div>
+            </div>
+            <!---INSERT RIGHT PANEL -->
+        </div>
+    </div>
+</div>
+
+
+
+
+<!------------- NEW PANEL 0------------->
+<div class="panel panel-default" style="display:none">           
+
+    <div class="panel-body">
+        <h2><i class="fa fa-child fa-2x"></i> HEADING</h2>
+
+        <div class="row readmore">
+            <div class="col-md-9 panel-body">
+                <p>LEFT COLOMN</p>
+
+            </div>
+            <!---INSERT RIGHT PANEL -->
+            <div class="col-md-3 rightBlock panel-body">
+                <p class="hideThis">RIGHT COLOMN</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<!------------END CONTENT ---------------->
+
+  
+</body>
+
+</html>>>>>
